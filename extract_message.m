@@ -1,18 +1,23 @@
 clc; clear;
 
-% ===== ADDPATH CHUNG src & images =====
+% ADDPATH src & images 
 root = fileparts(mfilename('fullpath'));
 addpath(fullfile(root,'src'));
 addpath(fullfile(root,'images'));
 
-% ===== ĐỌC ẢNH STEGO RGB =====
-stego = imread('Shivanya stego.png');   % images đã addpath
+% ĐỌC ẢNH STEGO RGB
+stego = imread('images/Shivanya stego.png');
 
-% ===== LẤY ĐÚNG KÊNH ĐÃ GIẤU (B) =====
+% LẤY ĐÚNG KÊNH B
 B = stego(:,:,3);
 
-% ===== TRÍCH XUẤT =====
+% TRÍCH XUẤT
 extracted = extract_pvd(B);
 
-disp('Chuỗi trích xuất:');
-disp(extracted);
+% GHI RA FILE TXT (UTF-8) 
+fid = fopen(fullfile(root,'extracted.txt'),'w','n','UTF-8');
+assert(fid~=-1,'Không ghi được extracted.txt');
+fwrite(fid, extracted, 'char');
+fclose(fid);
+
+disp('Đã trích xuất thông điệp ra file extracted.txt');
