@@ -6,7 +6,7 @@ addpath(fullfile(root,'src'));
 addpath(fullfile(root,'images'));
 
 % ĐỌC ẢNH RGB GỐC 
-img = imread('lenna.png');   % ảnh nằm trong images/
+img = imread('Shivanya.png');   % ảnh nằm trong images/
 
 R = img(:,:,1);
 G = img(:,:,2);
