@@ -1,23 +1,25 @@
 clc; clear;
 
-% ADDPATH src & images 
 root = fileparts(mfilename('fullpath'));
 addpath(fullfile(root,'src'));
 addpath(fullfile(root,'images'));
 
-% ĐỌC ẢNH STEGO RGB
-stego = imread('images/Shivanya stego.png');
-
-% LẤY ĐÚNG KÊNH B
+stego = imread('images/Shivanya_stego.png');
 B = stego(:,:,3);
 
-% TRÍCH XUẤT
 extracted = extract_pvd(B);
 
-% GHI RA FILE TXT (UTF-8) 
+% Lưu
 fid = fopen(fullfile(root,'extracted.txt'),'w','n','UTF-8');
-assert(fid~=-1,'Không ghi được extracted.txt');
 fwrite(fid, extracted, 'char');
 fclose(fid);
 
-disp('Đã trích xuất thông điệp ra file extracted.txt');
+disp('Đã trích xuất thông điệp');
+
+% So sánh thông điệp trích xuất với file ban đầu
+orig = fileread(fullfile(root,'secret.txt'));
+if isequal(orig, extracted)
+    disp('Thông điệp trích xuất CHÍNH XÁC');
+else
+    disp('Thông điệp KHÔNG khớp');
+end
