@@ -116,7 +116,7 @@ _Hình 5.1. So sánh ảnh gốc (bên trái) và ảnh chứa tin (bên phải)
 
 **So sánh histogram ảnh gốc và ảnh chứa tin**
 
-![So sánh histogram ảnh gốc và ảnh stego](results/histogram_PVD)
+![So sánh histogram ảnh gốc và ảnh stego](results/histogram_PVD.png)
 
 _Hình 5.2. Histogram ảnh gốc (trên) và ảnh chứa tin (dưới)_
 
