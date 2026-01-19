@@ -51,7 +51,7 @@ PVD_Matlab_Project/
 │   └── extract_pvd.m                  % Hàm trích xuất PVD
 │
 ├── results/
-│   ├── histogram_PVD.png                  % Kết quả so sánh histogram giữa ảnh gốc và ảnh stego
+│   ├── histogram_PVD.png              % Kết quả so sánh histogram giữa ảnh gốc và ảnh stego
 │   └── compare_cover_stego.png        % So sánh giữa ảnh gốc và ảnh stego
 │
 └── images/
@@ -67,8 +67,16 @@ PVD_Matlab_Project/
 
 Chạy script sau trong MATLAB:
 
+- Đối với ảnh mức xám:
+
 ```matlab
-create_stego.m
+create_stego_gray.m
+```
+
+- Đối với ảnh màu:
+
+```matlab
+create_stego_rgb.m
 ```
 
 Kết quả sau khi chạy:
@@ -81,10 +89,18 @@ Kết quả sau khi chạy:
 
 ### 5.2. Trích xuất thông điệp
 
-Chạy script:
+Chạy script sau trong MATLAB:
+
+- Đối với ảnh mức xám:
 
 ```matlab
-extract_message_gray.m hoặc extract_message_rgb.m
+extract_message_gray.m
+```
+
+- Đối với ảnh màu:
+
+```matlab
+extract_message_rgb.m
 ```
 
 Kết quả sau khi chạy
