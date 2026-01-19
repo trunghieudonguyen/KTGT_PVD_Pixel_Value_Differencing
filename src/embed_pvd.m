@@ -12,7 +12,7 @@ ranges = [
     64 127
 ];
 
-% ================= SECRET TO BITS =================
+% Chuyển thông điệp sang bit
 bytes = unicode2native(secret,'UTF-8');
 payload_bits = reshape(dec2bin(bytes,8).'-'0',1,[]);
 bit_len = length(payload_bits);

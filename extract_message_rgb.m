@@ -10,14 +10,14 @@ B = stego(:,:,3);
 extracted = extract_pvd(B);
 
 % Lưu
-fid = fopen(fullfile(root,'extracted.txt'),'w','n','UTF-8');
+fid = fopen(fullfile(root,'extracted_rgb.txt'),'w','n','UTF-8');
 fwrite(fid, extracted, 'char');
 fclose(fid);
 
 disp('Đã trích xuất thông điệp');
 
 % So sánh thông điệp trích xuất với file ban đầu
-orig = fileread(fullfile(root,'secret.txt'));
+orig = fileread(fullfile(root,'secret_rgb.txt'));
 if isequal(orig, extracted)
     disp('Thông điệp trích xuất CHÍNH XÁC');
 else
