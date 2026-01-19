@@ -93,15 +93,15 @@ Thông điệp trích xuất CHÍNH XÁC
 
 ---
 
-\*So sánh ảnh gốc và ảnh chứa tin\*\*
+**So sánh ảnh gốc và ảnh chứa tin**
 
-![So sánh ảnh gốc và ảnh stego](images/compare_cover_stego.png)
+![So sánh ảnh gốc và ảnh stego](results/compare_cover_stego.png)
 
 _Hình 5.1. So sánh ảnh gốc (bên trái) và ảnh chứa tin (bên phải)_
 
 **So sánh histogram ảnh gốc và ảnh chứa tin**
 
-![So sánh histogram ảnh gốc và ảnh stego](images/compare_histogram_PVD)
+![So sánh histogram ảnh gốc và ảnh stego](results/compare_histogram_PVD)
 
 _Hình 5.2. Histogram ảnh gốc (trên) và ảnh chứa tin (dưới)_
 
