@@ -91,8 +91,6 @@ Kết quả sau khi chạy
 Đã trích xuất thông điệp
 Thông điệp trích xuất CHÍNH XÁC
 
----
-
 **So sánh ảnh gốc và ảnh chứa tin**
 
 ![So sánh ảnh gốc và ảnh stego](results/compare_cover_stego.png)
@@ -104,6 +102,8 @@ _Hình 5.1. So sánh ảnh gốc (bên trái) và ảnh chứa tin (bên phải)
 ![So sánh histogram ảnh gốc và ảnh stego](results/compare_histogram_PVD)
 
 _Hình 5.2. Histogram ảnh gốc (trên) và ảnh chứa tin (dưới)_
+
+---
 
 ## 6. Yêu cầu môi trường
 
